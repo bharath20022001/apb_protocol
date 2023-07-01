@@ -1,0 +1,7 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1688242395" />
+    <testcase name="master1" classname="master_test" file="/home/bharath/capstone_project/apb/tests/master_test.py" lineno="47" time="0.03023552894592285" sim_time_ns="50.001" ratio_time="1653.7167280727347" />
+    <testcase name="slave1" classname="master_test" file="/home/bharath/capstone_project/apb/tests/master_test.py" lineno="103" time="0.022064208984375" sim_time_ns="47.00000000000001" ratio_time="2130.1466113416323" />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,23 @@
+<top abs_name="top" size="15" coverage="8" cover_percentage="53.33">
+  <pres_state size="3" coverage="2" cover_percentage="66.67" abs_name="top.pres_state" weight="1" at_least="1">
+    <bin0 bin="Idle" hits="0" abs_name="top.pres_state.bin0" />
+    <bin1 bin="SETUP" hits="20" abs_name="top.pres_state.bin1" />
+    <bin2 bin="ACESS" hits="19" abs_name="top.pres_state.bin2" />
+  </pres_state>
+  <prev_state size="3" coverage="3" cover_percentage="100.0" abs_name="top.prev_state" weight="1" at_least="1">
+    <bin0 bin="Idle" hits="2" abs_name="top.prev_state.bin0" />
+    <bin1 bin="SETUP" hits="19" abs_name="top.prev_state.bin1" />
+    <bin2 bin="ACESS" hits="18" abs_name="top.prev_state.bin2" />
+  </prev_state>
+  <cross size="9" coverage="3" cover_percentage="33.33" abs_name="top.cross" weight="1" at_least="1">
+    <bin0 bin="('Idle', 'Idle')" hits="0" abs_name="top.cross.bin0" />
+    <bin1 bin="('Idle', 'SETUP')" hits="2" abs_name="top.cross.bin1" />
+    <bin2 bin="('Idle', 'ACESS')" hits="0" abs_name="top.cross.bin2" />
+    <bin3 bin="('SETUP', 'Idle')" hits="0" abs_name="top.cross.bin3" />
+    <bin4 bin="('SETUP', 'SETUP')" hits="0" abs_name="top.cross.bin4" />
+    <bin5 bin="('SETUP', 'ACESS')" hits="19" abs_name="top.cross.bin5" />
+    <bin6 bin="('ACESS', 'Idle')" hits="0" abs_name="top.cross.bin6" />
+    <bin7 bin="('ACESS', 'SETUP')" hits="18" abs_name="top.cross.bin7" />
+    <bin8 bin="('ACESS', 'ACESS')" hits="0" abs_name="top.cross.bin8" />
+  </cross>
+</top>
