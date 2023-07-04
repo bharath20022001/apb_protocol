@@ -107,7 +107,7 @@ master transmission waveform
 
 master receiving waveform
 
-![image]([https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/waves/rx.png](https://github.com/Bharathreddy02/apb_protocal/assets/135442130/12e7bd2f-7c60-4b3a-bdd0-deb79432a364)https://github.com/Bharathreddy02/apb_protocal/assets/135442130/12e7bd2f-7c60-4b3a-bdd0-deb79432a364)
+![image](https://github.com/Bharathreddy02/apb_protocal/assets/135442130/12e7bd2f-7c60-4b3a-bdd0-deb79432a364)
 
 
 
