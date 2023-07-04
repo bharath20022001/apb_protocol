@@ -103,11 +103,11 @@ The test bench for transmitting data from master is written in <a href = "https:
 The test bench for receiving data from master is written in <a href = "https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/master_rxtb.py" >master_rxtb.py</a>
 
 master transmission waveform
-![image](https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/waves/tx.png)
+![image](https://github.com/Bharathreddy02/apb_protocal/assets/135442130/c4ee443c-981a-451f-bac6-0187ef9c7730)
 
 master receiving waveform
 
-![image](https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/waves/rx.png)
+![image]([https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/waves/rx.png](https://github.com/Bharathreddy02/apb_protocal/assets/135442130/12e7bd2f-7c60-4b3a-bdd0-deb79432a364)https://github.com/Bharathreddy02/apb_protocal/assets/135442130/12e7bd2f-7c60-4b3a-bdd0-deb79432a364)
 
 
 
