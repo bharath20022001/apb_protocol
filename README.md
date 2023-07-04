@@ -96,7 +96,13 @@ PWDATA | Slave Interface | Write data. This bus is driven by the peripheral bus 
 
 # Test bench
 
-The test bench was writen by using <a href = "https://www.cocotb.org/" >cocotb</a> framework
+The test bench was writen by using <a href = "https://www.cocotb.org/" >cocotb</a> framework. All states has been covered when data is transmitting and receiving from master.
+
+The test bench for transmitting data from master is written in <a href = "https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/master_txtb.py" >master_txtb.py</a>
+
+The test bench for receiving data from master is written in <a href = "https://github.com/Bharathreddy02/apb_protocal/blob/main/tests/master_rxtb.py" >master_rxtb.py</a>
+
+
 
 
 
