@@ -66,8 +66,6 @@ async def master1(master):
     
     await RisingEdge(master.PCLK)
 
-    master.apb_write_data=28
-
     await RisingEdge(master.PCLK)
 
     p_drv=InputDriver(master,'',master.PCLK)
@@ -83,7 +81,7 @@ async def master1(master):
         await Timer(1,'ns')
         master.apb_write_paddr.value=10+i
         await Timer(3,'ns')
-        await RisingEdge(master.PCLK)
+        await RisingEdge(master.PCLK)    
 
 
     coverage_db.report_coverage(cocotb.log.info, bins=True)
@@ -98,55 +96,6 @@ async def master1(master):
     await ReadOnly()
     await Timer(3,'ns')
 
-
-#read data from slave to master
-
-
-@cocotb.test()
-
-async def slave1(master):
-
-    #RESET#
-
-    master.PRESETn.value = 1
-
-    await Timer(1, 'ns')
-
-    master.PRESETn.value = 0
-
-    await Timer(1, 'ns')
-
-    await RisingEdge(master.PCLK)
-
-    master.PRESETn.value = 1
-
-    master.apb_read_paddr.value=101
-    
-    await RisingEdge(master.PCLK)
-
-    p_drv=InputDriver(master,'',master.PCLK)
-
-    InputMonitor(master, '',master.PCLK, callback=state_cover)
-
-    master.transfer.value=1
-
-    master.READ_WRITE.value=1
-
-    for i in range(10):
-        master.PRDATA.value=28+i
-        await Timer(4,'ns')
-        await RisingEdge(master.PCLK)    
-
-    
-    coverage_db.report_coverage(cocotb.log.info, bins=True)
-
-    coverage_file = os.path.join(
-
-        os.getenv('RESULT_PATH', "./"), 'coverage1.xml')
-
-    coverage_db.export_to_xml(filename=coverage_file)    
-    await ReadOnly()
-    await RisingEdge(master.PCLK)    
 
 #driver 
 class InputDriver(BusDriver):
