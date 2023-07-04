@@ -19,10 +19,6 @@ Top Module Name: apb_protocol.v
 Testbench Name: master_txtb.v
 Testbench Name: master_rxtb.v
 
-APB Interface Block Diagram:
-
-![image](https://user-images.githubusercontent.com/82434808/122651062-0bc74980-d154-11eb-9737-591e928a734e.png)
-
 Operation Of APB
 
 ![image](https://user-images.githubusercontent.com/82434808/122651071-1681de80-d154-11eb-9977-9d46bacd77b9.png)
@@ -98,7 +94,9 @@ PRDATA | Slave Interface | Read Data. The selected slave drives   this bus durin
 PWDATA | Slave Interface | Write data. This bus is driven by the peripheral bus bridge unit during write cycles when PWRITE is high. | 8
 
 
+# Test bench
 
+The test bench was writen by using <a href = "https://www.cocotb.org/" >cocotb</a> framework
 
 
 
