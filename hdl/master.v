@@ -1,10 +1,4 @@
-////////////////////////////////////////////////
-//
-// Name:   Shubhi Agrawal
-// Design: APB2 Protocol Master
-// Date:   13-06-2021
-//
-///////////////////////////////////////////////
+
 
 
 
@@ -19,7 +13,7 @@
 	output reg [8:0]PADDR,
 	output reg PWRITE,
 	output reg [7:0]PWDATA,apb_read_data_out,
-	output PSLVERR ); 
+	  output PSLVERR );  
        // integer i,count;
    
   reg [2:0] state, next_state;
